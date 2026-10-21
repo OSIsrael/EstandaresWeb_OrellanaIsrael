@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Clínica Veterinaria</h1>
+        <nav>
+                <a href="#inicio">Inicio</a></li>
+                <a href="#servicios">Servicios</a></>
+                <a href="#formulario">Formulario de Cita Médica</a></li>
+           
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="./img/logo.png" alt="Logo de la clínica veterinaria" width="200">
+            <h3>Historia de nuestra clínica</h3>
+            <p>Fundada en 1995, nuestra clínica ha estado al servicio de la comunidad durante más de <strong>25 años</strong>, ofreciendo atención veterinaria de calidad y un compromiso con el bienestar animal.</p>
+        </aside>
+        <article id="inicio">
+            <h2>Inicio</h2>
+            <p>En nuestra clínica veterinaria, nos dedicamos a brindar el mejor cuidado para tus mascotas. Contamos con un equipo de profesionales altamente capacitados y un ambiente acogedor para tus animales.</p>
+        </article>
+        <section>
+            <h2>Servicios</h2>
+            <ul>
+                <li>Consultas generales</li>
+                <li>Vacunación</li>
+                <li>Cirugías</li>
+                <li>Urgencias 24/7</li>
+            </ul>
+        </section>
+        <section> 
+            <form action="#" method="post">
+                <h2>Formulario de Cita Médica</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                <label for="mascota">Nombre de la mascota:</label>
+                <input type="text" id="mascota" name="mascota" required>
+                <label for="fecha">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="hora">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+</body>
+</html>
