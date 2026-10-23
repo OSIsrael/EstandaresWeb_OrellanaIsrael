@@ -26,3 +26,35 @@ img {
     height: auto;
     display: block;
 }
+
+.encabezado {
+    background-color: var(--color-blanco);
+    padding: 1rem;
+    border-bottom: 2px solid var(--color-borde);
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primario);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navegacion a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+}
+
+.navegacion a:hover {
+    text-decoration: underline;
+    background-color: var(--color-fondo);
+    border-radius: 4px;
+}
