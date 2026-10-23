@@ -177,3 +177,8 @@ input[type="submit"]:hover {
             "lateral formulario";
     }
 }
+a:focus,
+input:focus {
+    outline: 3px solid var(--color-primario);
+    outline-offset: 2px;
+}
