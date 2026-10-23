@@ -58,3 +58,90 @@ img {
     background-color: var(--color-fondo);
     border-radius: 4px;
 }
+
+.principal {
+    padding: 1rem;
+}
+
+.articulo, .seccion, .lateral {
+    background-color: var(--color-blanco);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-borde);
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+th, td {
+    border: 1px solid var(--color-borde);
+    padding: 0.6rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+
+fieldset {
+    border: 2px solid var(--color-primario);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--color-primario);
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+input:not([type="submit"]) {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    border: none;
+    padding: 0.8rem;
+    margin-top: 1.2rem;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
+
+.pie-pagina {
+    background-color: var(--color-blanco);
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid var(--color-borde);
+}
