@@ -68,37 +68,41 @@
                 </div>
             </section>
 
-            <section id="formulario" class="seccion">
-                <h2>Reserva tu cita</h2>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Formulario de Cita Médica</legend>
+            <div id="formulario" class="seccion">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de Cita Médica</legend>
+                    <p class="nota-obligatorios">Todos los campos son obligatorios.</p>
 
-                        <label for="nombre">Nombre del propietario:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                    <label for="nombre">Nombre del propietario:</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
 
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
 
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono" pattern="0[2-7]\d{7}|09\d{8}" title="Ingresa un número válido de Ecuador (Ej: 0991234567 o 022123456)" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel" 
+                           pattern="0[2-7]\d{7}|09\d{8}" 
+                           aria-describedby="ayuda-telefono" 
+                           title="Ingresa un número válido de Ecuador (Ej: 0991234567 o 022123456)" required>
+                    <small id="ayuda-telefono">Formato: 10 dígitos (celular 09...).</small>
 
-                        <label for="mascota">Nombre de la mascota:</label>
-                        <input type="text" id="mascota" name="mascota" required>
+                    <label for="mascota">Nombre de la mascota:</label>
+                    <input type="text" id="mascota" name="mascota" required>
 
-                        <label for="edad">Edad de la mascota (años):</label>
-                        <input type="number" id="edad" name="edad" min="0" max="30" required>
+                    <label for="edad">Edad de la mascota (años):</label>
+                    <input type="number" id="edad" name="edad" min="0" max="30" required>
 
-                        <label for="fecha">Fecha de la cita:</label>
-                        <input type="date" id="fecha" name="fecha" required>
+                    <label for="fecha">Fecha de la cita:</label>
+                    <input type="date" id="fecha" name="fecha" min="2026-10-23" required>
 
-                        <label for="hora">Hora de la cita:</label>
-                        <input type="time" id="hora" name="hora" required>
+                    <label for="hora">Hora de la cita (08:00 - 18:00):</label>
+                    <input type="time" id="hora" name="hora" min="08:00" max="18:00" required>
 
-                        <input type="submit" value="Solicitar Cita">
-                    </fieldset>
-                </form>
-            </section>
+                    <input type="submit" value="Solicitar Cita">
+                </fieldset>
+            </form>
+        </div>
              <aside class="lateral">
                 <img src="./img/logo.png" alt="Logotipo oficial de la clínica veterinaria con huella animal">
                 <h2>Historia de nuestra clínica</h2>
